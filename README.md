@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="../imagens/portfolio.png" alt="Logo" width="100" height="100">
-</div>
-
 <h1 align="center">Portfólio de Projetos</h1>
 
 <p align="center">
@@ -20,6 +16,9 @@
 ## Visão Geral
 
 Este portfólio foi desenvolvido com o objetivo de demonstrar minhas habilidades e experiência em desenvolvimento web. Cada projeto listado aqui inclui uma breve descrição, tecnologias utilizadas e, quando possível, links para os repositórios ou versões online.
+
+
+![portfolio](https://github.com/RenatofilhoDevandtech/Porftfolio-Renato/assets/59034938/da01a015-442d-4046-881e-7d25f95eb6a1)
 
 ## Tecnologias Utilizadas
 
