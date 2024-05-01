@@ -1,99 +1,71 @@
-import styled, { keyframes } from 'styled-components';
-
-const backgroundAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-`;
-
-export const BackgroundAnimation = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #ffffff, #2bcee4);
-  background-size: 400% 400%;
-  animation: ${backgroundAnimation} 10s ease infinite;
-`;
+import styled from 'styled-components';
+import { FiExternalLink,} from 'react-icons/fi';
 
 export const Section = styled.section`
   background-color: #f9f9f9;
-  padding: 4rem 0;
-  align-items: center;
-  height: 50vh;
-  max-width: 800px; /* Aumentando o tamanho máximo */
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 30px; 
+  margin-bottom: 30px;
+`;
+
+export const Heading = styled.h1`
+  font-size: 36px;
+  margin-bottom: 30px;
+`;
+
+export const ProjectContainer = styled.div`
+  max-width: 1200px;
   margin: 0 auto;
-  margin-top: 300px;
-  position: relative; /* Adicionando posição relativa para o keyframe */
-  overflow: hidden; /* Escondendo a animação fora da seção */
-
-  /* Responsividade */
-  @media screen and (max-width: 768px) {
-    height: auto; /* Altura automática em telas menores */
-  }
 `;
 
-export const Card = styled.div`
-  width: 100%; /* Ajustando a largura para ocupar todo o espaço do carrossel */
-  max-width: 300px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+export const ProjectItem = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
+  justify-content: center;
+`;
 
-  img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
+export const ProjectBox = styled.div`
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+`;
 
-  h2 {
-    background-color: white;
-    color: black;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+export const ProjectImage = styled.img`
+  width: 100%;
+  border-radius: 10px;
+`;
 
-  div {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 10px; /* Adicionando margem ao topo para separar os ícones do texto */
-  }
+export const ProjectTitle = styled.h2`
+  font-size: 24px;
+  margin: 20px 0;
+`;
 
-  button {
-    font-size: 1rem;
-    color: #0c0b0b;
-    background-color: #e7d20e;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+export const ProjectDescription = styled.p`
+  font-size: 16px;
+  color: #555;
+`;
 
-  button:hover {
-    background-color: #ecc20a;
+export const ProjectLinks = styled.div`
+  margin-top: 20px;
+`;
+
+export const ProjectLink = styled.a`
+  display: inline-block;
+  background-color: #2bcee4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #1e33f1;
   }
 `;
 
-// Ajustando o tamanho dos ícones
-export const Icon = styled.div`
-  font-size: 24px; /* Aumentando o tamanho dos ícones */
+export const ExternalLinkIcon = styled(FiExternalLink)`
+  margin-left: 5px;
+  font-size: 16px;
 `;

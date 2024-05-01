@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import perfil from '../../assets/perfil1.png';
+import vnweb from '../../assets/vnweb.svg';
 import * as S from '../Skills/Style_skills';
 import { FaHtml5, FaCss3, FaJs, FaPaintBrush, FaReact, FaNodeJs, FaGit, FaAws, FaGithub } from 'react-icons/fa';
 
@@ -13,7 +13,7 @@ const Skills = () => {
   
         <S.Data>
           <S.Subtitle>Professional Skills</S.Subtitle>
-          <S.Text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</S.Text>
+          <S.Text> Skills Adquiridas pelo curso Front End ministrado pelo Vai na WEB </S.Text>
 
           <S.SkillsData>
             <S.Names>
@@ -21,7 +21,7 @@ const Skills = () => {
               <S.Name>HTML5</S.Name>
             </S.Names>
             <S.Bar className="skills__bar skills__html"></S.Bar>
-            <S.Percentage>65%</S.Percentage>
+            <S.Percentage>45%</S.Percentage>
           </S.SkillsData>
 
           <S.SkillsData>
@@ -84,7 +84,7 @@ const Skills = () => {
               <S.Name>GitHub</S.Name>
             </S.Names>
             <S.Bar className="skills__bar skills__github"></S.Bar>
-            <S.Percentage>55%</S.Percentage>
+            <S.Percentage>45%</S.Percentage>
           </S.SkillsData>
 
 
@@ -100,7 +100,7 @@ const Skills = () => {
         </S.Data>
 
         <S.ImgContainer>
-          <S.Img src={perfil} alt="" className="skills__img" />
+          <S.Img src={vnweb} alt="" className="skills__img" />
         </S.ImgContainer>
         
       </S.ContainerSkill>

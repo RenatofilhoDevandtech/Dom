@@ -24,17 +24,16 @@ export default function Inicio() {
           <S.DivMain>
             <img src={Renato} alt="Renato Filho" />
             <S.DivText>
-              <h1>Sobre Mim</h1>
+              <h1>Entre em contato</h1>
               <h5>
-                Desenvolvedor Front-End <span>& Amante da Inovação</span>
+                vamos trabalhar <span>Juntos ;)</span>
               </h5>
               <p>
-                Olá, sou Renato Filho, um entusiasta da tecnologia apaixonado por criar interfaces bonitas e funcionais.
-                Combinando meu conhecimento em design e desenvolvimento, busco constantemente superar limites e
-                entregar soluções que fazem a diferença.
+              “Olá! Sou Renato Filho, um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Se você está procurando um site elegante, responsivo e cheio de vida,
+               você está no lugar certo! Vamos transformar suas ideias em realidade. Entre em contato e vamos construir algo incrível juntos!”
               </p>
               <button type="button" onClick={handleContactClick}>Entre em contato</button>
-              <a href="/seucurriculo.pdf" download>
+              <a href="../../assets/curriculo/RenatoFilho-FrontEndJr.pdf" download>
                 <button type="button">Meu CV</button>
               </a>
             </S.DivText>

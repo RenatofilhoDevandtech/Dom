@@ -31,7 +31,7 @@ export const SocialLink = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #6bd0ff;
+    color: #2bcee4;
   }
 `;
 

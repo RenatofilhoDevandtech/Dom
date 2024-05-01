@@ -2,46 +2,47 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   background-color: ${(props) => (props.modoEscuro ? "#085366" : "#f5f5f5")};
-  color: ${(props) => (props.modoEscuro ? "#fff" : "#085366")};
+  color: ${(props) => (props.modoEscuro ? "#333" : "#085366")}; /* Alteração da cor do texto quando em modo escuro */
   transition: background-color 0.3s ease, color 0.3s ease;
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
 `;
 
 export const Section = styled.section`
   font-family: 'Poppins', sans-serif;
   width: 100%;
   padding: 20px 0;
-  background: linear-gradient(180deg, #ffffff 0%, #fcf0f0 100%);
-  margin-top: 20px;
+  background: linear-gradient(180deg, #fff 0%, #fff 100%);
+  margin-top: 30px;
+  margin-bottom: 30px; /* Espaçamento inferior */
   border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
 
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     width: 70%;
     margin-top: 0;
-    border: none;
   }
 `;
 
-// Divisão principal
 export const DivMain = styled.div`
   width: 95%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
 
   img {
     border: 2px solid #8c9497;
     box-shadow: 0 0 5px #7d8386, 0 0 25px #7d8386;
     width: 100%;
-    border-radius: 2em;
+    border-radius: 50%;
     transition: transform 0.3s ease;
   }
 
@@ -51,15 +52,14 @@ export const DivMain = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    align-items: flex-start;
 
     img {
-      width: 20%;
+      width: 40%;
+      margin-right: 20px;
     }
   }
 `;
 
-// Divisão de texto
 export const DivText = styled.div`
   padding: 20px;
   text-align: center;
@@ -67,20 +67,16 @@ export const DivText = styled.div`
 
   h1, h5, p {
     margin-bottom: 20px;
-    font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-
+    font-size: 2rem;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 3rem;
     text-transform: capitalize;
   }
 
   h5 {
-    font-size: 20px;
-    text-transform: capitalize;
+    font-size: 1.5rem;
   }
 
   span {
@@ -88,26 +84,23 @@ export const DivText = styled.div`
   }
 
   p {
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 1rem;
   }
 
   button {
-    background: transparent;
-    color: #46d0e2;
-    font-size: 16px;
+    background-color: #46d0e2;
+    color: white;
+    font-size: 1rem;
     text-decoration: none;
-    border: 2px solid #46d0e2;
+    border: none;
     font-weight: bold;
-    padding: 13px 30px;
+    padding: 15px 30px;
     border-radius: 30px;
     transition: 0.4s ease;
 
     &:hover {
-      background-color: #46d0e2;
-      color: white;
-      border: 2px solid #46d0e2;
+      background-color: #43c5e6;
       box-shadow: 0 0 25px #46d0e2, 0 0 25px #46d0e2;
       cursor: pointer;
       transform: scale(1.1);
@@ -118,25 +111,24 @@ export const DivText = styled.div`
     padding: 10px;
 
     h1 {
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     h5 {
-      font-size: 18px;
+      font-size: 1.25rem;
     }
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       margin-bottom: 15px;
     }
 
     button {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
 `;
 
-// Divisão de ícones
 export const DivIcon = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -153,14 +145,14 @@ export const DivIcon = styled.div`
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;
+    color: #333;
     font-size: 2rem;
   }
 
   .icondiv {
     width: 80px;
     height: 80px;
-    color: #46b1e2;
+    color: #333;
     transition: all 0.3s ease-in-out;
 
     @media (max-width: 768px) {
@@ -170,7 +162,7 @@ export const DivIcon = styled.div`
   }
 
   &:hover {
-    background-color: #46b1e2;
+    background-color: #46d0e2;
 
     .icondiv {
       color: #fff;
@@ -179,7 +171,6 @@ export const DivIcon = styled.div`
   }
 `;
 
-// Botão de ícone
 export const IconButton = styled.button`
   background: transparent;
   border: none;

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const SectionSkill = styled.section`
   padding: 5vw 0;
   background-color: #f9f9f9;
+  margin-top: 30px; /* Espaçamento superior */
+  margin-bottom: 30px;
 `;
 
 export const Title = styled.h2`
@@ -13,7 +15,7 @@ export const Title = styled.h2`
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
-    margin-bottom: 2vw;
+    margin-bottom: vw;
   }
 `;
 
@@ -56,7 +58,6 @@ export const Text = styled.p`
   font-size: 1rem;
   color: #666;
 
-
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
   }
@@ -78,7 +79,6 @@ export const Icon = styled.div`
   margin-right: 10px;
   color: #2bcee4; /* Cor azul #2bcee4 */
 
-
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
     margin-right: 0.5vw;
@@ -97,13 +97,19 @@ export const Name = styled.span`
 export const Bar = styled.div`
   height: 0.5vw;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #55e5f8;
   border-radius: 5px;
   margin: 1vw 0;
+  transition: width 0.5s ease; /* Adiciona animação de transição */
 
   @media screen and (max-width: 768px) {
     height: 0.3vw;
     margin: 0.5vw 0;
+  }
+
+  /* Adiciona animação de crescimento para as barras */
+  &:hover {
+    width: 80%;
   }
 `;
 
@@ -132,4 +138,3 @@ export const Img = styled.img`
   width: 100%;
   height: auto;
 `;
-

@@ -1,5 +1,14 @@
 // styles.js
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Section = styled.section`
   background-color: #f9f9f9;
@@ -8,6 +17,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: space-evenly;
   min-height: 95vh; 
+ 
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -25,6 +35,7 @@ export const Content = styled.div`
   margin-bottom: 5rem;
   padding: 3rem;
   margin-top: 20px;
+  animation: ${fadeIn} 2s ease;
 `;
 
 export const Title = styled.h1`
@@ -79,6 +90,7 @@ export const ProfileImage = styled.div`
     max-width: 500px;
     height: auto;
     transition: transform 0.3s ease;
+    animation: ${fadeIn} 1s ease;
 
     &:hover {
       transform: scale(1.05);
@@ -98,4 +110,5 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: ${fadeIn} 1s ease;
 `;
